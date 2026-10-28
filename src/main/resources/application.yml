@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: csvvalidator
+
+  # Connection settings
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/csvvalidator}
+    username: ${DB_USERNAME:csvvalidator}
+    password: ${DB_PASSWORD:csvvalidator}
+  
+  jpa:
+    hibernate:
+      # Flyway owns the schema, hibernate checks that entities match it
+      ddl-auto: validate
+    open-in-view: false
+  
+  flyway:
+    enabled: true

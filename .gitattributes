@@ -1,2 +1,5 @@
+# Normalize line endings so it builds the same on Windows, macOS, and Linux
+* text=auto
+
 /mvnw text eol=lf
 *.cmd text eol=crlf
