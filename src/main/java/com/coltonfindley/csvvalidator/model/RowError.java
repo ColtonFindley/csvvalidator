@@ -3,7 +3,7 @@ package com.coltonfindley.csvvalidator.model;
 import jakarta.persistence.*;
 
 @Entity 
-@Table(name = "row_erros") // maps to row_errors table
+@Table(name = "row_errors") // maps to row_errors table
 public class RowError {
     
     // columns in row_errors

@@ -18,7 +18,7 @@ CREATE TABLE rules (
     -- rule types: REQUIRED, DATA_TYPE, RANGE, ALLOWED_VALUES, REGEX, UNIQUE
     rule_type VARCHAR(30) NOT NULL,
     -- optional parameters
-    data_type VARCHAR(20)
+    data_type VARCHAR(20),
     min_value NUMERIC(19, 4),
     max_value NUMERIC(19, 4),
     pattern VARCHAR(500),
@@ -50,6 +50,6 @@ CREATE TABLE row_errors (
     column_name VARCHAR(100) NOT NULL,
     rule_type VARCHAR(30) NOT NULL,
     message VARCHAR(500) NOT NULL
-)
+);
 -- find a run's errors and return them ordered by row number
 CREATE INDEX idx_row_errors_run_row ON row_errors (run_id, row_number);

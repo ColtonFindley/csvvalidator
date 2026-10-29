@@ -30,7 +30,7 @@ public class Rule {
     @Column(name = "data_type", length = 20)
     private DataType dataType;
 
-    @Column(name = "min_vale", precision = 19, scale = 4)
+    @Column(name = "min_value", precision = 19, scale = 4)
     private BigDecimal minValue;
 
     @Column(name = "max_value", precision = 19, scale = 4)

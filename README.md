@@ -28,7 +28,7 @@ RuleSet 1 ──< ValidationRun 1 ──< RowError
 ```
 
 - RuleSet (id, name, description, created_at)
-- Rule (id, rule_set_id, column_name, rule_type, parameters)
+- Rule (id, rule_set_id, column_name, rule_type, data_type, min_value, max_value, pattern, allowed_values)
 - ValidationRun (id, rule_set_id, filename, total_rows, failed_rows, status, created_at)
 - RowError (id, run_id, row_number, column_name, rule_type, message)
 

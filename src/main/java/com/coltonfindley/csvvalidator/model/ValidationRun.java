@@ -57,7 +57,7 @@ public class ValidationRun {
     public void setFailedRows(int failedRows) {this.failedRows = failedRows;}
 
     public RunStatus getStatus() {return status;}
-    public void setRunStatus(RunStatus status) {this.status = status;}
+    public void setStatus(RunStatus status) {this.status = status;}
 
     public Instant getCreatedAt() {return createdAt;}
     // createdAt is set in onCreate()
